@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E79911DD-E44F-47FE-9D7A-448F7FD9C3FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sniper.My.MyApplication</StartupObject>
+    <RootNamespace>Sniper</RootNamespace>
+    <AssemblyName>Sniper RAT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sniper RAT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sniper RAT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1295813182_Internet-Explorer.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\frmConnR.Designer.vb">
+      <DependentUpon>frmConnR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\frmConnR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\frmControlPanel.Designer.vb">
+      <DependentUpon>frmControlPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\frmControlPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\frmImmWeb.Designer.vb">
+      <DependentUpon>frmImmWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\frmImmWeb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\frmInfoM.Designer.vb">
+      <DependentUpon>frmInfoM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\frmInfoM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\frmNotes.Designer.vb">
+      <DependentUpon>frmNotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\frmNotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\frmScreen.Designer.vb">
+      <DependentUpon>frmScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\frmScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\frmStart.Designer.vb">
+      <DependentUpon>frmStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\frmStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Poppi.Designer.vb">
+      <DependentUpon>Poppi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Poppi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\frmConnR.resx">
+      <DependentUpon>frmConnR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\frmControlPanel.resx">
+      <DependentUpon>frmControlPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\frmImmWeb.resx">
+      <DependentUpon>frmImmWeb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\frmInfoM.resx">
+      <DependentUpon>frmInfoM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\frmNotes.resx">
+      <DependentUpon>frmNotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\frmScreen.resx">
+      <DependentUpon>frmScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\frmStart.resx">
+      <DependentUpon>frmStart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Poppi.resx">
+      <DependentUpon>Poppi.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1295813182_Internet-Explorer.ico" />
+    <None Include="Resources\478-radar.gif" />
+    <None Include="Resources\1308057262_monotone_arrow_right.png" />
+    <None Include="Resources\1307457878_tester.ico" />
+    <None Include="Resources\1307280249_increase.ico" />
+    <None Include="Resources\1307280225_contrast_decrease.ico" />
+    <None Include="Resources\1307280197_sound_mute.ico" />
+    <None Include="Resources\1300106901_3122.png" />
+    <None Include="Resources\1306589281_edit-clear.ico" />
+    <None Include="Resources\1306589186_book.ico" />
+    <None Include="Resources\1306589090_Applications.ico" />
+    <None Include="Resources\Sniper Logo.jpg" />
+    <None Include="Resources\1306255534_audacity.png" />
+    <None Include="Resources\1306254272_Stop1NormalRed.ico" />
+    <None Include="Resources\1306254106_player_rec.ico" />
+    <None Include="Resources\1306238974_preferences-desktop-keyboard-shortcuts.png" />
+    <None Include="Resources\Sniper1.jpg" />
+    <None Include="Resources\Sniper.jpg" />
+    <None Include="Resources\countdown.wav" />
+    <None Include="Resources\1303247350_tick_circle.ico" />
+    <None Include="Resources\1300362518_Circle_Red.png" />
+    <None Include="Resources\1299786608_101.png" />
+    <None Include="Resources\1302375075_webcam1.png" />
+    <None Include="Resources\1300106922_close1.png" />
+    <None Include="Resources\1300106901_3121.png" />
+    <None Include="Resources\1302375075_webcam.png" />
+    <None Include="Resources\mirino.gif" />
+    <None Include="Resources\1301605477_Information.ico" />
+    <None Include="Resources\1301605515_Help1.ico" />
+    <None Include="Resources\1301605492_alert.ico" />
+    <None Include="Resources\1301605527_Error.ico" />
+    <None Include="Resources\1301605515_Help.ico" />
+    <None Include="Resources\1301605304_Help.png" />
+    <None Include="Resources\1301338949_screen.png" />
+    <None Include="Resources\200446_137197623016502_100001787964260_235140_2201261_n.jpg" />
+    <None Include="Resources\1300126724_notebook_boy1.png" />
+    <None Include="Resources\1300127188_edit-clear.ico" />
+    <None Include="Resources\1300127122_3floppy_unmount.ico" />
+    <None Include="Resources\1300127056_3floppy_unmount.png" />
+    <None Include="Resources\1300126724_notebook_boy.png" />
+    <None Include="Resources\1300106922_close.png" />
+    <None Include="Resources\1300106901_312.png" />
+    <None Include="Resources\1299786658_parcel.png" />
+    <None Include="Resources\1299786608_10.png" />
+    <None Include="Resources\1299702464_edit-paste.png" />
+    <None Include="Resources\1299702441_editcopy.png" />
+    <None Include="Resources\1299698356_icontexto-aurora-folders-open.png" />
+    <None Include="Resources\1299698298_start.png" />
+    <None Include="Resources\1299528532_Rename1.png" />
+    <None Include="Resources\1299528532_Rename.png" />
+    <None Include="Resources\1299525627_Folder-Delete.png" />
+    <None Include="Resources\1299525427_file_delete.png" />
+    <None Include="Resources\1298924187_interact.png" />
+    <None Include="Resources\1298149176_progressbar.png" />
+    <None Include="Resources\1298063983_backup-restore.png" />
+    <None Include="Resources\1298063917_resize diag 2.png" />
+    <None Include="Resources\Sniper.PNG" />
+    <None Include="Resources\1296847899_Connections.png" />
+    <None Include="Resources\1297459329_remote.png" />
+    <None Include="Resources\1297459224_Symbol-Stop.png" />
+    <None Include="Resources\1297459169_xine.png" />
+    <None Include="Resources\1297454786_gnutella.png" />
+    <None Include="Resources\1297106147_Play1Hot.png" />
+    <None Include="Resources\1295813182_Internet-Explorer.ico" />
+    <None Include="Resources\1296671525_exit.ico" />
+    <None Include="Resources\cut.ico" />
+    <None Include="Resources\1296499257_application-x-desktop1.ico" />
+    <None Include="Resources\1296499579_info1.ico" />
+    <None Include="Resources\1296499579_info.ico" />
+    <None Include="Resources\1296499354_Windows_Log_Off.ico" />
+    <None Include="Resources\1296499332_button_blue_repeat.ico" />
+    <None Include="Resources\1296499311_exit.ico" />
+    <None Include="Resources\1296499257_application-x-desktop.ico" />
+    <None Include="Resources\1296499123_mycomputer.ico" />
+    <None Include="Resources\1296499092_fileclose.ico" />
+    <None Include="Resources\1296499042_Control-Panel.ico" />
+    <None Include="Resources\1295815739_old-go-top.ico" />
+    <None Include="Resources\1295815212_quick_restart.png" />
+    <None Include="Resources\1295814102_satelite1.png" />
+    <None Include="Resources\1295814102_satelite.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

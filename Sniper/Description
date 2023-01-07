@@ -1,5 +1,6 @@
 Remote administration tool based on TCP/IP reverse connection. In "COPIE" you find already configurated clints for people who had bought the service.
 The names of the stub files (executables to generate the client) and the source code of the client can result extremily contorted or non-sensical.
 This was one of the tactics I had adopted to make the program undetectable to antivirus at the time*.
-
+Showcase here: https://www.youtube.com/watch?v=bDxS4V13qrI&feature=youtu.be
+The folder "WINAPP32" is actually the client stub.
 *WARNING: IT IS NO LONGER TRUE. IF YOU DOWNLOAD THIS FILE YOUR ANTIVIRUS WILL DETECT IT. So no worries if that happens.
